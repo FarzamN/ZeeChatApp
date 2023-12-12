@@ -8,7 +8,7 @@ import Login from './src/screen/Authentication/Login';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
-  // const userDetail = useSelector((state: RootState) => state.UserSlice)
+  const userDetail = useSelector((state: RootState) => state.userSlice.value);
   useEffect(() => {
     setTimeout(() => {
       SplashScreen.hide();
@@ -21,10 +21,10 @@ const App: React.FC = () => {
 
   return (
     <Provider store={store}>
-      {/* {loading ? <Splash /> : userDetail == null ? <Login /> : <ExampleComponent />} */}
-      <ExampleComponent />
+      {loading ? <Splash /> : userDetail == null ? <Login /> : <ExampleComponent />}
+      {/* <ExampleComponent /> */}
 
     </Provider>
   );
 }
-export default App;
+export default App; 

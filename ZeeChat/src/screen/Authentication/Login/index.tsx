@@ -1,12 +1,18 @@
-import { View, Text } from 'react-native'
-import React, { FC } from 'react'
+import React, {FC} from 'react';
+import {View, Text, Button} from 'react-native';
 
 const Login: FC = () => {
-    return (
-        <View>
-            <Text>Login</Text>
-        </View>
-    )
-}
+  return (
+    <View
+      style={{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#000',
+      }}>
+      <Button title="Click here"/>
+    </View>
+  );
+};
 
-export default Login
+export default Login;
