@@ -1,22 +1,22 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import ExampleComponent from '../screen/ExampleComponent';
 
-import Login from '../screen/Authentication/Login';
 
 const Stack = createNativeStackNavigator();
 
-const AuthNavigator = () => {
+const UserNavigator = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="login"
+                initialRouteName="ex"
                 screenOptions={{ headerShown: false, animation: 'flip' }}>
-                <Stack.Screen name="login" component={Login} />
+                <Stack.Screen name="ex" component={ExampleComponent} />
 
             </Stack.Navigator>
         </NavigationContainer>
     );
 };
 
-export default AuthNavigator;
+export default UserNavigator;

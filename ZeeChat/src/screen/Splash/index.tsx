@@ -6,7 +6,7 @@ import { Colors } from '../utils/Colors.tsx';
 import BackgroundImage from '../../components/BackgroundImage';
 
 const { width } = Dimensions.get('screen');
-const SplashScreen = () => {
+const Splash = () => {
     return (
         <BackgroundImage source={require('../../assets/image/Backgrounds/splash.jpg')}>
             <View style={styles.Container}>
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
     },
 });
-export default SplashScreen;
+export default Splash;

@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counter from './slices/IncrimentSlice';
-import userSlice from './slices/userSlice';
+import userSlice from './slices/UserSlice'; // Import your userSlice here
 
 const store = configureStore({
     reducer: {
         counter,
-        userSlice,
+        userSlice, // Add the userSlice to your reducers
     },
 });
 
